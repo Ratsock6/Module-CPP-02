@@ -37,7 +37,7 @@ Fixed::Fixed(float const &fixed):
 	std::cout << "Float constructor called" << std::endl;
 }
 
-Fixed & Fixed::operator=(const Fixed &fixed) {
+Fixed &Fixed::operator=(const Fixed &fixed) {
 	std::cout << "Copy assignment operator called" << std::endl;
 	this->rawBits = fixed.getRawBits();
 	return (*this);
@@ -58,7 +58,6 @@ std::ostream & operator << (std::ostream &os, const Fixed &fixed) {
 	os << fixed.toFloat();
 	return (os);
 }
-
 
 float Fixed::toFloat(void) const {
 	return ((float) this->rawBits / (1 << i));

@@ -1,4 +1,4 @@
-NAME := Mon_premier_canon
+NAME := fixed2
 
 CFLAGS := -g -Werror -Wall -Wextra -std=c++98
 

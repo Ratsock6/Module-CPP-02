@@ -24,7 +24,7 @@ public:
 	Fixed(const int &fixed);
 	Fixed(const float &fixed);
 	~Fixed();
-	Fixed & operator = (const Fixed &fixed);
+	Fixed &operator = (const Fixed &fixed);
 	int getRawBits(void) const;
 	void setRawBits(int const i);
 	float toFloat(void) const;
